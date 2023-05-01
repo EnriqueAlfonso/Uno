@@ -6,7 +6,7 @@ export function Automovil (uno, dos, tres, cuatro, cinco)
     this.kms = cuatro;
     this.color = cinco;
     // 
-    function retornar ()
+    this.retornar = function ()
     {
         if (this.kms < 100000)
         {
@@ -22,11 +22,11 @@ export class Usuario
     {
         this.nick = uno;
         this.password = dos;
-        this.mayor = tres;
+        this.edad = tres;
     }
     retornar ()
     {
-        if (this.mayor) // this.mayor === true
+        if (this.edad >= 18)
         {
             return "Ingresar.";
         }
